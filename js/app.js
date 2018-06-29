@@ -1,7 +1,7 @@
 
 
 function myFunction(){
-	var FTP = document.getElementById("input-ftp").value;
+	var FTP = document.getElementById("ftp-input").value;
 	var a1Results = calcZone1(FTP);
 	var a3Results = calcZone2(FTP, a1Results);
 	var a5Results = calcZone3(FTP, a3Results);
@@ -57,7 +57,7 @@ function fadeCalc() {
 
 //Reset the Form 
 function resetForm() {
-    document.getElementById("input").reset();
+    document.getElementById("ftp-input").reset();
 	$('.calc').removeClass('calc-animate');
 }
 

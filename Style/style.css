@@ -3,6 +3,8 @@ body {
 }
 
 .navbar {
+	height: 165px;
+	text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,26 +16,73 @@ body {
   width: 100%;
   /*adds opacity to background*/  
   background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../images/sunrise-road.jpg);
-  /* Center and scale the image nicely */
+  /* Center and scale*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
+#title-logo {
+	position: relative;
+    width: 15%;
+	left: 50%;
+	margin-left: -100px;
+    opacity: .2;
+}
+
 #title-text {
-	text-align: center;
-	font-size: 44px;
+	position: absolute;
+	margin-top: -44%;
+	font-size: 2.7rem;
 	font-weight: bold;
 	letter-spacing: 2px;
 	color: #FDC57B;
 	padding: 15px 0;
+	line-height: 1.2;
+}
+
+@media (min-width: 370px) {
+	#title-text {
+		margin-top: -42%;
+		margin-left: 5%;
+		font-size: 2.8rem;
+	}
+}
+
+@media (min-width: 410px) {
+	#title-text {
+		margin-top: -37%;
+		margin-left: 5%;
+		font-size: 2.8rem;
+	}
+}
+
+@media (min-width: 500px) {
+	#title-text {
+		margin-top: -15%;
+		margin-left: 5%;
+		font-size: 3.5rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	#title-text {
+		margin-top: -10%;
+		margin-left: 5%;
+		font-size: 4rem;
+	}
 }
 
 .chart {
 	background-color: #D2EBCD; /*green*/
-	margin: 10% 10% 10% 10%;
-	border-radius: 15px;
+	margin: 0;
+}
+
+@media (min-width: 500px) {
+	.chart {
+		margin: 10%;
+	}
 }
 
 ul {
@@ -54,50 +103,59 @@ ul {
 	color: #FDC57B;
 	font-weight: bold;
 	letter-spacing: 1px;
-	font-size: 38px;
-	padding-right: 110px;
+	font-size: 24px;
+	margin-right: 3%;
+}
+
+@media (min-width: 400px) {
+	#zones-float-right {
+		margin-right: 11%;
+		padding-top: 30px;
+	}
 }
 
 table {
 	width: 100%;
 }
 
-#chart-title {
-	background-color: #394A51;
-	color: #FDC57B;
-	font-weight: bold;
-	letter-spacing: 3px;
-	font-size: 38px;
-	margin-right: 30px;
-	margin-left: 30px;
-	height: 70px;
-}
-
-#input-ftp {
+.ftp {
+	display: inline-block;
 	border-radius: 8px;
 	font-size: 26px;
 	background-color: rgba(255, 255, 255, .7);
 	border-bottom: none;
-	width: 60px;
+	width: 80px;
 	padding-bottom: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
 	color: #394A51;
 }
 
-#input-ftp:focus {
+@media (min-width: 400px) {
+	.ftp{
+		margin-bottom: 20px;
+	}
+}
+
+.ftp:focus {
 	outline:none;
 }
 
+@media (min-width: 550px) {
+ 	.ftp {
+ 	}
+ }
+
 .myBtn {
 	display: inline-block;
-	padding: 7px 40px;
+	padding: 7px 10px;
+	margin-right: 10px;
 	background-color: rgba(255, 255, 255, .7);
 	border: none;
 	outline: none;
-	border-radius: 0px;
 	font-size: 21px;
-	margin-left: 60px;
 	cursor: pointer;
-	border-radius: 15px;
+	border-radius: 8px;
   	color: #394A51;
 }
 
@@ -111,6 +169,7 @@ table {
 }
 
 .zone {
+	font-size: 1rem;
 	text-align: left;
 	width: 70%;
 	padding-left: 20px;
@@ -134,8 +193,6 @@ table {
 tr {
 	letter-spacing: 1px;
 	line-height: 45px;
-	/*color: #394A51;*/
-
 	font-size: 21px;
 }
 
@@ -207,7 +264,7 @@ hr {
 }
 
 .column {
-	width: 30%;
+	width: 100%;
 	margin-bottom: 30px;
 	background-color: rgba(255, 255, 255, .7); 
 	text-align: center;
@@ -215,39 +272,6 @@ hr {
     color: #394A51;
     font-size: 18px;
     padding: 10px 10px 0 10px;
-}
-
-/*Media Query 767px*/
-@media (max-width: 767px) {
-  
-  .column {
-   width: 100%;
-  }
-
-  .myBtn {
-	margin-bottom: 20px;
-	margin-left: 0; 
-	width: 100%; 
-  }
-
-  #chart-title {
-  	margin-left: 45px;
-  }
-
-  .line-item.-forButton {
-  	width: 80%;
-  	float: none;
-  	margin-left: auto;
-  	margin-right: auto;
-  }
-
-  .zone {
-  	font-size: 16px;
-  }
-
-  .calc {
-  	font-size: 16px;
-  }
 }
 
 p {

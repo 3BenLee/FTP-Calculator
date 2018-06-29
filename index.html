@@ -11,20 +11,20 @@
 <body>
 	<div class="page-title">
 		<ul class="navbar">
+			<li id="title-logo"><img src="images/crank.png"></li>
 			<li id="title-text">Mashing The Data</li>
 		</ul>
 	</div>
 <div class="wrapper">
 	<div class="chart">
 		<div>
-			<ul class="chart-header">
-				<li class="line-item" id="chart-title">FTP</li> 
-				<li class="line-item"><form id="input"><input id="input-ftp"></form></li>
+			<ul class="chart-header"> 
+				<li class="line-item"><input type="text" placeholder="FTP" id="ftp-input" name="text_name" class="ftp" /></li>
 				<li class="line-item -forButton">
 					<button class="myBtn" onclick="myFunction()">Get Zones</button></li>
 				<li class="line-item -forButton">
 					<button class="myBtn" id="btn-reset" onclick="resetForm()">Reset</button></li>
-				<li class="line-item" id="zones-float-right">Zones</li>
+				<li class="line-item" id="zones-float-right">Watts</li>
 			</ul>
 		</div>
 			<div class="zone-table">	
