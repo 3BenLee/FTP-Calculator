@@ -53,6 +53,7 @@ function myFunction(){
 //Fade in zone parameters
 function fadeCalc() {
 	$('.calc').addClass('calc-animate');
+	$('.watts').addClass('watts-animate');
 }
 
 //Reset the Form 
@@ -60,6 +61,7 @@ function resetForm() {
     /*document.getElementById("ftp-input").reset();*/
     document.getElementById("ftp-input").value = '';
 	$('.calc').removeClass('calc-animate');
+	$('.watts').removeClass('watts-animate');
 }
 
 //Waypoints to ease in zone info
