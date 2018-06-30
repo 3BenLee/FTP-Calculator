@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900');
+
 body {
 	font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
-	height: 165px;
+	width: 100%;
+	height: 170px;
 	text-align: center;
     list-style-type: none;
     margin: 0;
@@ -15,7 +18,7 @@ body {
 .wrapper {
   width: 100%;
   /*adds opacity to background*/  
-  background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../images/sunrise-road.jpg);
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(../images/sunrise-road.jpg);
   /* Center and scale*/
   background-position: center;
   background-repeat: no-repeat;
@@ -25,9 +28,10 @@ body {
 
 #title-logo {
 	position: relative;
-    width: 15%;
+    width: 5px;
 	left: 50%;
 	margin-left: -100px;
+	margin-top: 5px;
     opacity: .2;
 }
 
@@ -35,7 +39,7 @@ body {
 	position: absolute;
 	margin-top: -44%;
 	font-size: 2.7rem;
-	font-weight: bold;
+	font-weight: 300;
 	letter-spacing: 2px;
 	color: #FDC57B;
 	padding: 15px 0;
@@ -45,31 +49,29 @@ body {
 @media (min-width: 370px) {
 	#title-text {
 		margin-top: -42%;
-		margin-left: 5%;
 		font-size: 2.8rem;
 	}
 }
 
 @media (min-width: 410px) {
 	#title-text {
-		margin-top: -37%;
-		margin-left: 5%;
+		margin-top: -31%;
 		font-size: 2.8rem;
 	}
 }
 
 @media (min-width: 500px) {
 	#title-text {
-		margin-top: -15%;
-		margin-left: 5%;
+		margin-top: -130px;
+		text-align: center;
+		width: 100%;
 		font-size: 3.5rem;
 	}
 }
 
 @media (min-width: 1000px) {
 	#title-text {
-		margin-top: -10%;
-		margin-left: 5%;
+		margin-left: 0px;
 		font-size: 4rem;
 	}
 }
@@ -101,9 +103,9 @@ ul {
 #zones-float-right {
 	float: right;
 	color: #FDC57B;
-	font-weight: bold;
+	font-weight: 300;
 	letter-spacing: 1px;
-	font-size: 24px;
+	font-size: 18px;
 	margin-right: 3%;
 }
 
@@ -120,18 +122,19 @@ table {
 
 .ftp {
 	display: inline-block;
-	border-radius: 8px;
+	border-radius: 4px;
 	font-size: 26px;
-	background-color: rgba(255, 255, 255, .7);
+	background-color: #D2EBCD;
 	border-bottom: none;
 	width: 80px;
+	height: 42px;
 	padding-bottom: 5px;
 	margin-right: 10px;
 	margin-left: 10px;
 	color: #394A51;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 370px) {
 	.ftp{
 		margin-bottom: 20px;
 	}
@@ -150,17 +153,19 @@ table {
 	display: inline-block;
 	padding: 7px 10px;
 	margin-right: 10px;
-	background-color: rgba(255, 255, 255, .7);
-	border: none;
+	background-color: #394A51;
+	border: 2px solid #FDC57B;
+	border-radius: 4px;
 	outline: none;
 	font-size: 21px;
+	font-weight: 300;
 	cursor: pointer;
-	border-radius: 8px;
-  	color: #394A51;
+  	color: #FDC57B;
 }
 
 .myBtn:hover {
 	background: #D2EBCD;
+	color: #394A51;
 	transition: 300ms ease-in;
 }
 
@@ -229,7 +234,7 @@ tr:nth-child(even) {
 	text-align: center;
 	font-size: 44px;
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	font-weight: 300;
 	letter-spacing: 2px;
 	color: #FDC57B;
 	padding: 15px 0 15px 0;
@@ -243,7 +248,7 @@ hr {
 
 .z-info-title {
 	font-size: 28px;
-	font-weight: bold;
+	font-weight: 300;
 	background-color: #D2EBCD;
 }
 
@@ -272,6 +277,18 @@ hr {
     color: #394A51;
     font-size: 18px;
     padding: 10px 10px 0 10px;
+}
+
+@media(min-width: 767px) {
+	.column {
+		width: 45%;
+	}
+}
+
+@media(min-width: 1000px) {
+	.column {
+		width: 30%;
+	}
 }
 
 p {

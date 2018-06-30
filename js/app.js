@@ -57,7 +57,8 @@ function fadeCalc() {
 
 //Reset the Form 
 function resetForm() {
-    document.getElementById("ftp-input").reset();
+    /*document.getElementById("ftp-input").reset();*/
+    document.getElementById("ftp-input").value = '';
 	$('.calc').removeClass('calc-animate');
 }
 
